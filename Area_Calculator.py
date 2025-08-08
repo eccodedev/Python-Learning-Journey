@@ -1,0 +1,82 @@
+#  Checkpoint project: 
+  # This is the final version of the area calculator project proposed by Codédex for practicing the knowledge 
+  # of the first 4 chapters of the Python course.
+
+    
+import sys
+def another_calculation():
+  print('Do you want to make another calculation?')
+  print('   1) YES')
+  print('   2) NO')
+
+  exit = int(input())
+  if exit == 2: 
+    return False
+  else:
+    return True
+
+def main():
+  print('   ==============================')
+  print('Welcome to the Area Calculator tool 📏' )
+  print('   ==============================')
+  print()
+
+  flag = True
+  while flag:
+    shape = int(input('Which of the following shapes do you want to calculate the area of?: 👀 \n   1) 📐 Triangle \n   2) 💵 Rectangle\n   3) 🧱 Square \n   4) 📀 Circle \n   5) 🚫 Quit \n'))
+
+    if shape == 1:
+      height = int(input('Enter the height: '))
+      base = int(input('Enter the base: '))
+      print()
+      t_area = (height * base) / 2
+      print(f'The area of the Triangle is: {t_area}')
+      print()
+
+    elif shape == 2:
+      lenght = int(input('Enter the length: '))
+      width = int(input('Enter the width: '))
+      r_area = lenght * width
+      print()
+      print(f'The area of the Rectangle is: {r_area}')
+      print()
+
+    elif shape == 3:
+      side = int(input('Enter the side measurement: '))
+      s_area = side ** 2
+      print()
+      print(f'The area of the Square is: {s_area}')
+      print()
+
+    elif shape == 4:
+      radius = int(input('Enter the radius of the Circle: '))
+      c_area = 3.14 * (radius ** 2)
+      print()
+      print(f' The area of the Circle is: {c_area}')
+      print()
+
+    elif shape == 5:
+      print()
+      print('           -Goodbye 👋🍃-        ')
+      print('   ==============================')
+      sys.exit(0)
+    
+    flag = another_calculation()
+if __name__ == "__main__":
+  main()
+
+print('   ==============================')
+print('          -Goodbye 👋🍃-           ')
+
+#  For achieving this code I had to research a little bit about functions, which is a topic
+  #  that I haven't studied yet. 
+
+# The most difficult part to me was to understand that the function "def main():" 
+  # was actually defining that all the code indented inside was part of a it,
+  #  and that the if __name__  == "__main__": main() was calling the function when the program
+  #  starts.
+
+# It sounds pretty simple but it took me a little bit to understand since it was the first time I wrote a block of code with
+   # functions in it.
+ 
+
