@@ -69,7 +69,7 @@ print('   ==============================')
 print('          -Goodbye 👋🍃-           ')
 
 #  For achieving this code I had to research a little bit about functions, which is a topic
-  #  that I haven't studied yet. 
+  #  that I hadn't studied yet. 
 
 # The most difficult part to me was to understand that the function "def main():" 
   # was actually defining that all the code indented inside was part of a it,
@@ -79,4 +79,5 @@ print('          -Goodbye 👋🍃-           ')
 # It sounds pretty simple but it took me a little bit to understand since it was the first time I wrote a block of code with
    # functions in it.
  
+
 
