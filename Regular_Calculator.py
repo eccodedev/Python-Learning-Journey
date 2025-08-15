@@ -105,5 +105,8 @@ print('            Goodbye!!')
 print('          📠  📟   🧮            ')
 print('    ==========================    ')
 
+# This project was intended for practicing the functions concept. 
+
+
 
 
